@@ -1,0 +1,207 @@
+/* Global Styles */
+:root {
+  --primary-bg-color: #e5e5e5;
+  --transition-speed: 0.2s;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.random-sentence{
+  font-size: x-large;
+}
+
+/* Vision Container Styles */
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Changed from height to min-height */
+}
+
+.vision-title {
+  margin-top: 10vh; /* Reduced from 10vh to 5vh */
+  position: relative;
+  z-index: 1;
+}
+
+.random-sentence {
+  margin-top: 15%; /* Reduced from 30% to 15% */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+  animation: slideInFromLeft 1s ease-out forwards;
+  font-style: italic;
+}
+
+/* Mission Container Styles */
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Goals Container Styles */
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+}
+
+
+/* Post Container Styles */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Post Item Styles */
+.post {
+  width: calc(25.3333% - 10px);
+  text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-posts-title {
+  text-align: center;
+}
+
+/* Base container styling */
+.AboutUs-container {
+  text-align: center;
+}
+
+.team-member-name-and-link {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Horizontally center the container's content */
+}
+
+.team-member-linkedin {
+  margin-left: 8px; /* Add space between the icon and the name */
+}
+
+.AboutUs-title {
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Flex container for team members */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Individual team member styling */
+.team-member {
+  flex: 0 1 calc(50% - 20px); /* Adjust flex-basis to ensure two items per line by default */
+  min-width: 250px;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Team member image styling */
+.team-member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Center text for team member info */
+.team-member-info {
+  text-align: center;
+}
+
+/* Team member name styling with fluid typography */
+.team-member-name {
+  font-size: calc(1em + 1vw);
+  margin-top: 0.5em;
+}
+
+/* Team member position styling */
+.team-member-position {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Media queries for responsive adjustments */
+
+/* For small phones (two items per line) */
+@media (max-width: 480px) {
+  .team-member {
+    flex-basis: calc(50% - 20px); /* Maintain two items per line */
+  }
+}
+
+/* For tablets and up (three items per line) */
+@media (min-width: 481px) {
+  .team-member {
+    flex-basis: calc(33.33% - 20px); /* Adjust for three items per line */
+  }
+}
+
+/* For large screens like laptops and desktops (three items per line) */
+@media (min-width: 1025px) {
+  .team-member {
+    flex-basis: calc(33.33% - 20px); /* Maintain three items per line */
+  }
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.post:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .vision-container,
+  .mission-container,
+  .goals-container {
+    min-height: 50vh;
+  }
+  .random-sentence{
+    font-size:medium;
+  }
+
+}
