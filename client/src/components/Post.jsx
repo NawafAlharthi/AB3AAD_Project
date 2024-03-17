@@ -27,24 +27,22 @@ function Posts() {
 
   return (
     <ScrollReveal>
-      <main className='bg-green-100 min-h-screen p-12'>
-        <section className='container mx-auto'>
-          <h1 className='text-5xl flex justify-center cursive'>Posts Page</h1>
-          <h2 className='text-lg text-grey-600 flex justify-center mb-12'>Welcome to my page of blog posts</h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-            {postData && postData.map((post, index) => ( // Include index here
-              <article key={post.slug.current}>
+      <main className='main-container'>
+        <section className='posts-containerr'>
+          <h1 className='posts-title'>Posts Page</h1>
+          <h2 className='posts-subtitle'>Welcome to my page of blog posts</h2>
+          <div className='posts-grid'>
+            {postData && postData.map((post, index) => (
+              <article className='post-article' key={post.slug.current}>
                 <Link to={"/post/" + post.slug.current}>
-                  <span className='block h-64 relative rounded shadow leading-sung bg-white border-l-8 border-green-400' key={index}> {/* Correct use of index */}
+                  <span className='post-article-content'>
                     <img 
                     src={post.mainImage.asset.url} 
                     alt={post.mainImage.alt} 
-                    className="w-full h-full rounded-r object-cover absolute"/>
-                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
-                        {post.title}
-                        </h3>
-                    </span>
+                    className="post-imaged"/>
+                    <h3 className="post-title">
+                      {post.title}
+                    </h3>
                   </span>
                 </Link>
               </article>

@@ -23,9 +23,12 @@ body, html {
 }
 
 .vision-title {
-  margin-top: 10vh; /* Reduced from 10vh to 5vh */
+  margin-top: 8vh; /* Reduced from 10vh to 5vh */
   position: relative;
   z-index: 1;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Cursive', sans-serif;
 }
 
 .random-sentence {
@@ -98,10 +101,13 @@ body, html {
 }
 
 .AboutUs-title {
-  margin-top: 3vh;
   margin-bottom: 4vh;
+  margin-top: 8vh; /* Reduced from 10vh to 5vh */
   position: relative;
   z-index: 1;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Cursive', sans-serif;
 }
 
 /* Flex container for team members */
@@ -204,4 +210,67 @@ body, html {
     font-size:medium;
   }
 
+}
+
+
+/* App.css */
+.main-container {
+  margin-top: 5vh;
+  background-color: #ffffff; /* Light green background */
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.posts-containerr {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.posts-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Cursive', sans-serif;
+}
+
+.posts-subtitle {
+  font-size: 1.25rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.post-article {
+  height: 16rem;
+  position: relative;
+  border-left: 8px solid #ffffff; /* Green border */
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.post-imaged {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.post-title {
+  color: #fff;
+  font-size: 1.25rem;
+  background-color: #d9534f; /* Bootstrap red */
+  opacity: 0.75;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.25rem;
 }

@@ -123,7 +123,14 @@ function AboutUs() {
 
   return (
     <div className="AboutUs-container">
-      <h1 className="AboutUs-title">Meet Our Team</h1>
+            <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <h1 className="AboutUs-title">Meet Our Team</h1>
+      </motion.div>
       <div className="team-members">
         {teamMembers.map((member, index) => (
           <motion.div 
