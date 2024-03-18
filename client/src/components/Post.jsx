@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal';
 import sanityClient from "../client.js"
 import { Link } from 'react-router-dom';
 
-function Posts() {
+export default function Posts() {
   const [postData, setPost] = useState(null);
 
   useEffect(() => {
@@ -51,7 +51,4 @@ function Posts() {
         </section>
       </main>
     </ScrollReveal>
-  );
-}
-
-export default Posts;
+  );}

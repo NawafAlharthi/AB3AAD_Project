@@ -6,7 +6,6 @@ import mainLogo from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/Logo.pn
 import movingCubeGif from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/giphy.gif';
 
 function NavigationBar() {
-  // ... (other styles and code remain unchanged)
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
