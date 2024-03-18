@@ -1,0 +1,52 @@
+/* styles.css */
+.single-post-container {
+    background-color: #ffffff; /* Example background color */
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  
+  .article-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e4f5e6; /* Example background color */
+    border-radius: 0.5rem;
+    margin: auto;
+    max-width: 1200px; /* Example max-width */
+  }
+  
+  
+  .article-header {
+    position: relative;
+  }
+  
+  .article-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 400px; /* Fixed height for the image */
+  }
+  
+  .article-author-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+  
+  .article-title {
+    font-size: 2rem; /* Example font size */
+    margin-bottom: 1rem;
+    text-align: center; /* Centers text horizontally */
+  }
+  
+  .article-author-name {
+    font-size: 1.5rem; /* Example font size */
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+  }
+  
+  .article-body {
+    padding: 1rem 3rem;
+    max-width: 100%;
+    overflow-wrap: break-word; /* This will break long unbreakable text to prevent overflow */
+  }
