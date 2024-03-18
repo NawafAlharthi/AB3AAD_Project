@@ -42,12 +42,18 @@ export default function SinglePost(){
                 <header className='relative'>
                     <div className='absolute h-full w-full flex items-center justifiy-center p-8'>
                         <div className='bg-white bg-opacity-75 rounded p-12'>
-                        <h1></h1>
-                        <div><img /></div>
-                        <p></p>
+                        <h1 className='cursive text-3xl lg:text-6xl mb-4'>
+                            {singlePost.title}
+                        </h1>
+                        <div className='flex jusitify-center text-grey-800'>
+                            <img src={urlFor(singlePost.authorImage).url()} 
+                            alt={singlePost.name}/>
+                            </div>
+                            <p></p>
                         </div>
                     </div>
                     <img />
+
                 </header>
                 <header>
                     Block Content
