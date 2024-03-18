@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavigationBar from './components/NavigationBar';
 import VisionPage from './components/Vision';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
 import AboutUs from './components/AboutUs';
-import PostsPage from './components/Post'; // Import the new PostsPage component
+import PostsPage from './components/Post';
+import SinglePost from './components/SinglePost'; // Import the SinglePost component
 
 function App() {
-  // ... (other states and functions remain unchanged)
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -23,7 +22,8 @@ function App() {
             </>
           } />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/posts" element={<PostsPage />} /> {}
+          <Route path="/posts" element={<PostsPage />} />
+          <Route path="/post/:slug" element={<SinglePost />} /> {/* Add this line */}
         </Routes>
       </div>
     </BrowserRouter>
