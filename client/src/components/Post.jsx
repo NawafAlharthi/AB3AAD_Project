@@ -30,7 +30,7 @@ export default function Posts() {
       <main className='main-container'>
         <section className='posts-containerr'>
           <h1 className='posts-title'>Posts Page</h1>
-          <h2 className='posts-subtitle'>Welcome to my page of blog posts</h2>
+          <h2 className='posts-subtitle'>Welcome to our page of posts !</h2>
           <div className='posts-grid'>
             {postData && postData.map((post, index) => (
               <article className='post-article' key={post.slug.current}>

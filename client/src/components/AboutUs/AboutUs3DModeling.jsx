@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import '../App.css'; // Make sure this path is correct for your project structure
+import '../../App.css'; // Make sure this path is correct for your project structure
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import image1 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/1.png';
 import image2 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/2.png';

@@ -1,12 +1,14 @@
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import mainLogo from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/Logo.png';
-import movingCubeGif from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/giphy.gif';
+import AboutUsDevelopment from '../components/AboutUs/AboutUsDevelopment';
+import AboutUsAdmin from '../components/AboutUs/AboutUsAdmin';
+import AboutUsContent from '../components/AboutUs/AboutUsContent'
+import AboutUs3DModeling from '../components/AboutUs/AboutUs3DModeling';
 
 function NavigationBar() {
-
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -26,11 +28,14 @@ function NavigationBar() {
             navbarScroll
           >
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/posts">Posts</Nav.Link> {/* Updated path */}
-            <Nav.Link as={Link} to="/about-us">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
+            <NavDropdown title="About Us" id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="/about-us/">Adminstration</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/">Content</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/">3D modeling</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about-us/">Development</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
-          {/* Display GIFs with color filters */}
-          {/* ... (GIF display code remains unchanged) */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

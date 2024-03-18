@@ -1,52 +1,88 @@
 /* styles.css */
 .single-post-container {
-    background-color: #ffffff; /* Example background color */
-    min-height: 100vh;
-    padding: 1.5rem;
-  }
-  
-  .article-container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #e4f5e6; /* Example background color */
-    border-radius: 0.5rem;
-    margin: auto;
-    max-width: 1200px; /* Example max-width */
-  }
-  
-  
-  .article-header {
-    position: relative;
-  }
-  
-  .article-image {
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    height: 400px; /* Fixed height for the image */
-  }
-  
-  .article-author-image {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-  }
-  
-  .article-title {
-    font-size: 2rem; /* Example font size */
-    margin-bottom: 1rem;
-    text-align: center; /* Centers text horizontally */
-  }
-  
-  .article-author-name {
-    font-size: 1.5rem; /* Example font size */
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
-  }
-  
+  background-color: #ffffff; /* White background for the post container */
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  padding: 1.5rem; /* Uniform padding around the content */
+}
+
+.article-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #e4f5e6; /* Light green background for the article */
+  border-radius: 0.5rem; /* Rounded corners for the container */
+  margin: auto; /* Center the container on the page */
+  max-width: 1200px; /* Maximum width to constrain the article width */
+}
+
+.article-header {
+  position: relative; /* Relative positioning for header elements */
+}
+
+.article-image {
+  width: 100%; /* Full width of the container */
+  object-fit: cover; /* Cover the area without losing aspect ratio */
+  border-top-left-radius: 0.5rem; /* Rounded top-left corner */
+  border-top-right-radius: 0.5rem; /* Rounded top-right corner */
+  height: 400px; /* Height adjusts to maintain aspect ratio */
+}
+
+.article-author-image {
+  width: 2.5rem; /* Fixed width for author image */
+  height: 2.5rem; /* Fixed height for author image */
+  border-radius: 50%; /* Circular shape for the author image */
+}
+
+.article-title {
+  font-size: 2rem; /* Large font size for the title */
+  margin-bottom: 1rem; /* Space below the title */
+  text-align: center; /* Center the title text */
+}
+
+.article-author-name {
+  font-size: 1.5rem; /* Font size for the author's name */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Vertically center the author's name */
+  padding-left: 0.5rem; /* Padding to the left of the author's name */
+}
+
+.article-body {
+  padding: 1rem 3rem; /* Padding inside the article body */
+  max-width: 100%; /* Maximum width of the article body */
+  overflow-wrap: break-word; /* Prevents long text from overflowing */
+}
+
+/* Responsive adjustments for different screen sizes */
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
   .article-body {
-    padding: 1rem 3rem;
-    max-width: 100%;
-    overflow-wrap: break-word; /* This will break long unbreakable text to prevent overflow */
+    padding: 1rem; /* Reduced padding for smaller screens */
   }
+
+  .article-title,
+  .article-author-name {
+    font-size: 1.5rem; /* Smaller font size for readability on mobile */
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .article-body {
+    padding: 1rem 2rem; /* Moderate padding for tablet screens */
+  }
+
+  .article-title,
+  .article-author-name {
+    font-size: 1.5rem; /* Slightly larger font size for tablets */
+  }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 769px) {
+  .article-body {
+    padding: 1rem 3rem; /* Original padding for larger screens */
+  }
+
+  .article-title,
+  .article-author-name {
+    font-size: 1.5rem; /* Original font size for larger screens */
+  }
+}

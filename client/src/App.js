@@ -4,7 +4,7 @@ import VisionPage from './components/Vision';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
-import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutUs/AboutUsAdmin';
 import PostsPage from './components/Post';
 import SinglePost from './components/SinglePost'; // Import the SinglePost component
 
