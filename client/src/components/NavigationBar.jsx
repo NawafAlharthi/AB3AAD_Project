@@ -24,7 +24,7 @@ function NavigationBar() {
             navbarScroll
           >
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
+            <Nav.Link as={Link} to="/posts">Publications</Nav.Link>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/adminstration/">Adminstration</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/content/">Content</NavDropdown.Item>
