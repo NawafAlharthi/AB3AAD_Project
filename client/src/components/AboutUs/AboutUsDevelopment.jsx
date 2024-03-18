@@ -17,88 +17,10 @@ import image12 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/12.png'
 import image13 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/13.png';
 import image14 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/14.png';
 import image15 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/15.png';
+import image16 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/Unkown.png';
 
 function AboutUs() {
   const teamMembers = [
-      {
-        img: image1,
-        name: 'Rafy Alharthi',
-        position: 'Founder and President',
-        linkedin: 'https://www.linkedin.com/in/rafy-s-alharthi-718080195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image2,
-        name: 'Saeed Baghdadi',
-        position: 'Deputy',
-        linkedin: 'https://www.linkedin.com/in/saeed-baghdadi-8b8100211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-        
-      },
-      {
-        img: image6,
-        name: 'Nawaf Alharthi',
-        position: 'Advisor',
-        linkedin: 'https://www.linkedin.com/in/nawafalharthii?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image11,
-        name: 'Noura Alzaid',
-        position: 'Advisor',
-        linkedin: 'https://www.linkedin.com/in/noura-alzaid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image12,
-        name: 'Noura Abuthiyab',
-        position: 'Advisor',
-        linkedin: 'https://www.linkedin.com/in/noura-abuthiyab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image10,
-        name: 'Nouf Albattal',
-        position: 'Head of Content',
-        linkedin: 'https://www.linkedin.com/in/nouf-albattal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image13,
-        name: 'Houssam Alhawsawi',
-        position: 'Head of Planning',
-        linkedin: 'https://www.linkedin.com/in/housam-alhoussawi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image15,
-        name: 'Hadeel Alghanim',
-        position: 'Head of Media',
-        linkedin: 'https://www.linkedin.com/in/sadiq-albader?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image8,
-        name: 'Juwain Assahafi',
-        position: 'Head Of Content',
-        linkedin: 'https://www.linkedin.com/in/juwain-assahafi-12641b27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image4,
-        name: 'Esra Turkistani',
-        position: 'Head of 3D modeling',
-        linkedin: 'https://www.linkedin.com/in/person-one'
-      },
-      {
-        img: image5,
-        name: 'Hussam Alasmari',
-        position: 'Content Team Member - Medical Division',
-        linkedin: 'https://www.linkedin.com/in/person-one'
-      },
-      {
-        img: image14,
-        name: 'Sadiq Albader',
-        position: 'Content Team Member - Mechanical Division',
-        linkedin: 'https://www.linkedin.com/in/sadiq-albader?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
-      },
-      {
-        img: image9,
-        name: 'Alaa Alsadiq',
-        position: '3D Modeling Team Member',
-        linkedin: 'https://www.linkedin.com/in/person-one'
-      },
       {
         img: image7,
         name: 'Shadell Alghamdi',
@@ -109,7 +31,7 @@ function AboutUs() {
         img: image3,
         name: 'Fares Fatani',
         position: 'Development Team Member',
-        linkedin: 'https://www.linkedin.com/in/person-one',
+        linkedin: '',
       },
   ];
 
@@ -123,13 +45,13 @@ function AboutUs() {
 
   return (
     <div className="AboutUs-container">
-            <motion.div
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <h1 className="AboutUs-title">Meet Our Team</h1>
+        <h1 className="AboutUs-title">Meet Our 3D Modeling Team</h1>
       </motion.div>
       <div className="team-members">
         {teamMembers.map((member, index) => (
@@ -144,12 +66,6 @@ function AboutUs() {
             <img src={member.img} alt={member.name} className="team-member-image" />
             <div className="team-member-info">
               <div className="team-member-name-and-link">
-                <SocialIcon 
-                  url={member.linkedin} 
-                  className="team-member-linkedin" 
-                  network="linkedin" 
-                  style={{ height: 25, width: 25, marginRight: '10px' }} // Add small space between icon and name
-                />
                 <motion.h2 
                   className="team-member-name"
                   variants={containerVariants}
@@ -159,6 +75,12 @@ function AboutUs() {
                 >
                   {member.name}
                 </motion.h2>
+                <SocialIcon 
+                  url={member.linkedin} 
+                  className="team-member-linkedin" 
+                  network="linkedin" 
+                  style={{ height: 25, width: 25, marginLeft: '10px' }} // Adjusted to add space on the left
+                />
               </div>
               <motion.p 
                 className="team-member-position"

@@ -3,10 +3,6 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import mainLogo from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/Logo.png';
-import AboutUsDevelopment from '../components/AboutUs/AboutUsDevelopment';
-import AboutUsAdmin from '../components/AboutUs/AboutUsAdmin';
-import AboutUsContent from '../components/AboutUs/AboutUsContent'
-import AboutUs3DModeling from '../components/AboutUs/AboutUs3DModeling';
 
 function NavigationBar() {
   return (
@@ -30,10 +26,10 @@ function NavigationBar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
             <NavDropdown title="About Us" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/about-us/">Adminstration</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/">Content</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/">3D modeling</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/about-us/">Development</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/adminstration/">Adminstration</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/content/">Content</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/3d/">3D modeling</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Dev/">Development</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

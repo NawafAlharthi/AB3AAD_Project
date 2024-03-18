@@ -17,6 +17,7 @@ import image12 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/12.png'
 import image13 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/13.png';
 import image14 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/14.png';
 import image15 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/15.png';
+import image16 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/Unkown.png';
 
 function AboutUsAdmin() {
   const teamMembers = [
@@ -79,7 +80,13 @@ function AboutUsAdmin() {
         img: image4,
         name: 'Esra Turkistani',
         position: 'Head of 3D modeling',
-        linkedin: 'https://www.linkedin.com/in/person-one'
+        linkedin: ''
+      },
+      {
+        img: image16, // Assuming image16 is the correct path for Basem Alzhrani's picture
+        name: 'Basem Alzhrani',
+        position: 'Head of Quality',
+        linkedin: '' // Since Basem does not have a LinkedIn account, this is set to an empty string
       },
   ];
 
@@ -93,13 +100,13 @@ function AboutUsAdmin() {
 
   return (
     <div className="AboutUs-container">
-            <motion.div
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <h1 className="AboutUs-title">Meet Our Team</h1>
+        <h1 className="AboutUs-title">Meet Our 3D Modeling Team</h1>
       </motion.div>
       <div className="team-members">
         {teamMembers.map((member, index) => (
@@ -114,12 +121,6 @@ function AboutUsAdmin() {
             <img src={member.img} alt={member.name} className="team-member-image" />
             <div className="team-member-info">
               <div className="team-member-name-and-link">
-                <SocialIcon 
-                  url={member.linkedin} 
-                  className="team-member-linkedin" 
-                  network="linkedin" 
-                  style={{ height: 25, width: 25, marginRight: '10px' }} // Add small space between icon and name
-                />
                 <motion.h2 
                   className="team-member-name"
                   variants={containerVariants}
@@ -129,6 +130,12 @@ function AboutUsAdmin() {
                 >
                   {member.name}
                 </motion.h2>
+                <SocialIcon 
+                  url={member.linkedin} 
+                  className="team-member-linkedin" 
+                  network="linkedin" 
+                  style={{ height: 25, width: 25, marginLeft: '10px' }} // Adjusted to add space on the left
+                />
               </div>
               <motion.p 
                 className="team-member-position"
