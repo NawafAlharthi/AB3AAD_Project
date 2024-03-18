@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import NavigationBar from './components/NavigationBar';
 import VisionPage from './components/Vision';

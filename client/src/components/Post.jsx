@@ -29,8 +29,8 @@ export default function Posts() {
     <ScrollReveal>
       <main className='main-container'>
         <section className='posts-containerr'>
-          <h1 className='posts-title'>Publications Page</h1>
-          <h2 className='posts-subtitle'>Welcome to our page of publications !</h2>
+          <h1 className='posts-title'>Our Publications</h1>
+          <h2 className='posts-subtitle'></h2>
           <div className='posts-grid'>
             {postData && postData.map((post, index) => (
               <article className='post-article' key={post.slug.current}>

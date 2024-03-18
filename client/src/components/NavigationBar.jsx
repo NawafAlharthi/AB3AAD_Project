@@ -1,3 +1,4 @@
+// NavigationBar.js
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,13 +9,15 @@ function NavigationBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <img
-          src={mainLogo}
-          width="85"
-          height="70"
-          className="d-inline-block align-top"
-          alt="Logo"
-        />
+        <Link to="/">
+          <img
+            src={mainLogo}
+            width="85"
+            height="70"
+            className="d-inline-block align-top"
+            alt="Logo"
+          />
+        </Link>
         <Navbar.Brand href="#">AB3AAD</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
