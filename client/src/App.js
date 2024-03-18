@@ -5,11 +5,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
 import PostsPage from './components/Post';
-import SinglePost from './components/SinglePost'; // Import the SinglePost component
+import SinglePost from './components/SinglePost';
 import AboutUsDevelopment from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsDevelopment.jsx';
 import AboutUsAdmin from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsAdmin.jsx';
 import AboutUsContent from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsContent.jsx';
 import AboutUs3DModeling from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUs3DModeling.jsx';
+import Footer from './components/footer'; // Import the Footer component
 
 function App() {
   return (
@@ -28,10 +29,10 @@ function App() {
           <Route path="/content" element={<AboutUsContent />} />
           <Route path="/3d" element={<AboutUs3DModeling />} />
           <Route path="/Dev" element={<AboutUsDevelopment />} />
-          
           <Route path="/posts" element={<PostsPage />} />
-          <Route path="/post/:slug" element={<SinglePost />} /> {/* Add this line */}
+          <Route path="/post/:slug" element={<SinglePost />} />
         </Routes>
+        <Footer /> {/* Include the Footer component here */}
       </div>
     </BrowserRouter>
   );

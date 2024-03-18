@@ -26,7 +26,6 @@ body, html {
   margin-top: 8vh; /* Reduced from 10vh to 5vh */
   position: relative;
   z-index: 1;
-  font-size: 3rem;
   text-align: center;
   font-family: 'Cursive', sans-serif;
 }

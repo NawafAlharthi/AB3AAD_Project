@@ -106,7 +106,7 @@ function AboutUsAdmin() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <h1 className="AboutUs-title">Meet Our 3D Modeling Team</h1>
+        <h1 className="AboutUs-title">Meet Our Adminstarion Team</h1>
       </motion.div>
       <div className="team-members">
         {teamMembers.map((member, index) => (
