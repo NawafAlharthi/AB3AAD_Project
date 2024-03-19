@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import mainLogo from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/Logo.png';
+import mainLogo from '../img/Logo.png';
 
 function NavigationBar() {
   return (
