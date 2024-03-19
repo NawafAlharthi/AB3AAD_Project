@@ -7,10 +7,10 @@ import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
 import PostsPage from './components/Post';
 import SinglePost from './components/SinglePost';
-import AboutUsDevelopment from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsDevelopment.jsx';
-import AboutUsAdmin from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsAdmin.jsx';
-import AboutUsContent from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUsContent.jsx';
-import AboutUs3DModeling from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/components/AboutUs/AboutUs3DModeling.jsx';
+import AboutUsDevelopment from '../../client/src/components/AboutUs/AboutUsDevelopment.jsx';
+import AboutUsAdmin from '../../client/src/components/AboutUs/AboutUsAdmin.jsx';
+import AboutUsContent from '../../client/src/components/AboutUs/AboutUsContent.jsx';
+import AboutUs3DModeling from '../../client/src/components/AboutUs/AboutUs3DModeling.jsx';
 import Footer from './components/footer'; // Import the Footer component
 
 function App() {
