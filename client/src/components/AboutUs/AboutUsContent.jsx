@@ -2,22 +2,23 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import '../../App.css'; // Make sure this path is correct for your project structure
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import image1 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/1.png';
-import image2 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/2.png';
-import image3 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/3.png';
-import image4 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/4.png';
-import image5 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/5.png';
-import image6 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/6.png';
-import image7 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/7.png';
-import image8 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/8.png';
-import image9 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/9.png';
-import image10 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/10.png';
-import image11 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/11.png';
-import image12 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/12.png';
-import image13 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/13.png';
-import image14 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/14.png';
-import image15 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/15.png';
-import image16 from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/Team/Unkown.png';
+import image1 from '../AboutUs/Team/1.png';
+import image2 from '../AboutUs/Team/2.png';
+import image3 from '../AboutUs/Team/3.png';
+import image4 from '../AboutUs/Team/4.png';
+import image5 from '../AboutUs/Team/5.png';
+import image6 from '../AboutUs/Team/6.png';
+import image7 from '../AboutUs/Team/7.png';
+import image8 from '../AboutUs/Team/8.png';
+import image9 from '../AboutUs/Team/9.png';
+import image10 from '../AboutUs/Team/10.png';
+import image11 from '../AboutUs/Team/11.png';
+import image12 from '../AboutUs/Team/12.png';
+import image13 from '../AboutUs/Team/13.png';
+import image14 from '../AboutUs/Team/14.png';
+import image15 from '../AboutUs/Team/15.png';
+import image16 from '../AboutUs/Team/Unkown.png';
+
 
 
 function AboutUs() {
