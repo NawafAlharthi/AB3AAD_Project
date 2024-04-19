@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import ScrollReveal from './ScrollReveal'; 
-import sanityClient from "../client.js"
+import ScrollReveal from './ScrollReveal.jsx'; 
+import sanityClient from "../clientM.js"
 import { Link } from 'react-router-dom';
 
 export default function Posts() {
@@ -26,15 +26,16 @@ export default function Posts() {
   }, []);
 
   return (
+    
     <ScrollReveal>
       <main className='main-container'>
         <section className='posts-containerr'>
-          <h1 className='posts-title'>Our Publications (Medical) </h1>
+          <h1 className='posts-title'>Our Publications (Mechanical)</h1>
           <h2 className='posts-subtitle'></h2>
           <div className='posts-grid'>
             {postData && postData.map((post, index) => (
               <article className='post-article' key={post.slug.current}>
-                <Link to={"/post/" + post.slug.current}>
+                <Link to={"/postM/" + post.slug.current}>
                   <span className='post-article-content'>
                     <img 
                     src={post.mainImage.asset.url} 

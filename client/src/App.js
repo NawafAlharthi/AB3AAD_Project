@@ -7,6 +7,10 @@ import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
 import PostsPage from './components/Post';
 import SinglePost from './components/SinglePost';
+
+import PostsPageM from './components/PostM.jsx'
+import SinglePostM from './components/SinglePostM';
+
 import AboutUsDevelopment from '../../client/src/components/AboutUs/AboutUsDevelopment.jsx';
 import AboutUsAdmin from '../../client/src/components/AboutUs/AboutUsAdmin.jsx';
 import AboutUsContent from '../../client/src/components/AboutUs/AboutUsContent.jsx';
@@ -32,8 +36,12 @@ function App() {
           <Route path="/Dev" element={<AboutUsDevelopment />} />
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/post/:slug" element={<SinglePost />} />
+
+          <Route path="/postsM" element={<PostsPageM />} />
+          <Route path="/postM/:slug" element={<SinglePostM />} />
+
         </Routes>
-        <Footer /> {/* Include the Footer component here */}
+        <Footer /> {}
       </div>
     </BrowserRouter>
   );
