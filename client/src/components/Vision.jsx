@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'; // Update the relative path to the location of App.css
 import ScrollReveal from './ScrollReveal'; // Ensure you import the ScrollReveal component
-import firstGif from '/Users/nawaf/Desktop/AB3AAD_Project/client/src/img/xxx.gif'; // Import the GIF
+import firstGif from '../img/xxx.gif'; // Import the GIF
 
 function VisionPage() {
   const randomSentence = 'To be a hub for those who are interested in integrating 3D printing in their speciality.';
