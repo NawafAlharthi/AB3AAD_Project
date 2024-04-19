@@ -7,7 +7,7 @@ import OurMission from './components/Mission';
 import OurGoals from './components/Goals';
 import PostsPage from './components/Post';
 import SinglePost from './components/SinglePost';
-
+import BlockContent from '@sanity/block-content-to-react';
 import PostsPageM from './components/PostM.jsx'
 import SinglePostM from './components/SinglePostM';
 
