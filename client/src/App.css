@@ -3,6 +3,25 @@
   --primary-bg-color: #e5e5e5;
   --transition-speed: 0.2s;
 }
+.vision-container {
+  max-width: 100%; /* Ensures the container does not exceed the width of its parent */
+  margin: auto; /* Centers the container */
+}
+
+.responsive-gif {
+  width: 65%; /* Makes the image width responsive to the container width */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.res-gif {
+  width: 60%; /* Makes the image width responsive to the container width */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.re-gif {
+  width: 40%; /* Makes the image width responsive to the container width */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
 
 body, html {
   margin: 0;

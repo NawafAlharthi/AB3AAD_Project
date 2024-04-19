@@ -11,7 +11,7 @@ function VisionPage() {
       <div className="vision-container">
         <h1 className="vision-title">Our Vision</h1>
         <p className="random-sentence">{randomSentence}</p>
-        <img src={firstGif} alt="Description of GIF" width="750" height="600"/> {/* Display the GIF with specified dimensions */}
+        <img src={firstGif} alt="Description of GIF" className="responsive-gif"/> {/* Use className for styling */}
       </div>
     </ScrollReveal>
   );
