@@ -18,6 +18,7 @@ import image13 from '../AboutUs/Team/13.png';
 import image14 from '../AboutUs/Team/14.png';
 import image15 from '../AboutUs/Team/15.png';
 import image16 from '../AboutUs/Team/Unkown.png';
+import image17  from '../AboutUs/Team/44.png';
 
 function AboutUsAdmin() {
   const teamMembers = [
@@ -69,6 +70,18 @@ function AboutUsAdmin() {
         name: 'Hadeel Alghanim',
         position: 'Head of Media',
         linkedin: 'https://www.linkedin.com/in/sadiq-albader?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+      },
+      {
+        img: image16,
+        name: 'Bassam Fatani',
+        position: 'Head of Media',
+        linkedin: ''
+      },
+      {
+        img: image17,
+        name: 'Tayef Alsayed',
+        position: 'Head of Media',
+        linkedin: 'https://www.linkedin.com/in/taif-alsayed-864201139?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
       },
       {
         img: image8,
