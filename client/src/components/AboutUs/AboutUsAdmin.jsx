@@ -61,7 +61,7 @@ function AboutUsAdmin() {
       },
       {
         img: image13,
-        name: 'Houssam Alhawsawi',
+        name: 'Housam Alhoussawi',
         position: 'Head of Planning',
         linkedin: 'https://www.linkedin.com/in/housam-alhoussawi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
       },
