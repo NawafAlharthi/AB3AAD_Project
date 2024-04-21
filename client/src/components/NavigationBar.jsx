@@ -36,6 +36,7 @@ function NavigationBar() {
               <NavDropdown.Item as={Link} to="/content/">Content</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/3d/">3D modeling</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/Dev/">Development</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/design/">Design</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -15,6 +15,7 @@ import AboutUsDevelopment from '../../client/src/components/AboutUs/AboutUsDevel
 import AboutUsAdmin from '../../client/src/components/AboutUs/AboutUsAdmin.jsx';
 import AboutUsContent from '../../client/src/components/AboutUs/AboutUsContent.jsx';
 import AboutUs3DModeling from '../../client/src/components/AboutUs/AboutUs3DModeling.jsx';
+import AboutUsDesign from '../../client/src/components/AboutUs/AboutUsDesign.jsx';
 import Footer from './components/footer'; // Import the Footer component
 
 function App() {
@@ -36,9 +37,11 @@ function App() {
           <Route path="/Dev" element={<AboutUsDevelopment />} />
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/post/:slug" element={<SinglePost />} />
+          <Route path="/design" element={<AboutUsDesign />} />
 
           <Route path="/postsM" element={<PostsPageM />} />
           <Route path="/postM/:slug" element={<SinglePostM />} />
+          
 
         </Routes>
         <Footer /> {}
