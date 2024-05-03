@@ -15,9 +15,6 @@ const Footer = () => {
       {/* Make the following paragraph larger */}
       <p style={{ margin: '0.5rem 0', fontSize: '1.2rem' }}>© 2024 All rights reserved.</p>
       <p style={{ margin: '0.5rem 0', fontSize: '0.8rem' }}>Made With <span style={{ color: '#e25555' }}>❤️</span> By CEONawaf
-        <a href="https://github.com/NawafAlharthi" target="_blank" rel="noopener noreferrer" style={{ margin: '0 5px', color: '#333' }}>
-          <FaGithub />
-        </a>
         <a href="https://twitter.com/CEONawaf" target="_blank" rel="noopener noreferrer" style={{ margin: '0 5px', color: '#1DA1F2' }}>
           <FaTwitter />
         </a>
